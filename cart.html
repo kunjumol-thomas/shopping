@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart page</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Myntra</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Cart <span class="badge bg-primary">2</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                My Account
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Sign in</a></li>
+                <li><a class="dropdown-item" href="#">Register</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>My Cart (2)</h5>
+                        <hr>
+                        <div class="row gy-4">
+                            <div class="col-4">
+                                <img src="./img/shirt.jpg" style="height: 145px;" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h6>Shirt</h6>
+                                <span>Rs.880</span> <span class="text-secondary"><strike>900</strike></span> <span class="text-success">Rs.20 Discount</span>
+                            </div>
+                            <div class="col-2">
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="col-5">
+                                <button class="btn btn-light">REMOVE</button>
+                            </div>
+                        </div>
+                        <hr>
+                            <button class="btn btn-success  float-end" >PLACE ORDER</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Product Details</h5>
+                        <hr>
+                        Price (1item) <span class="float-end">Rs.880</span><br>
+                        Disccount <span class="float-end text-success">-20</span>
+                        Delivery Charges <span class="float-end text-success">FREE</span><hr>
+                        <b>Total Amount <span class="float-end">Rs.880</span></b><hr>
+                        <b><span class="text-success">You'll save Rs.20 on thid order</span></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+  <script src="js/bootstrap.js"></script>
+</html>
